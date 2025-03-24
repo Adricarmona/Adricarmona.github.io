@@ -1,0 +1,6 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    background-color: #F7F7F7; /* Azul */
+    padding: 1%;
+}
