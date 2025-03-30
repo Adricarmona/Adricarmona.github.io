@@ -11,7 +11,7 @@ import { find } from 'rxjs';
 export class AppComponent {
   title = 'Adricarmona.github.io';
 
-  activado: boolean = false;
+  activado: boolean = true;
 
   navbarMenu(){
     const opcionesNavbar = document.getElementsByClassName("opcionesNavbar")
@@ -26,7 +26,6 @@ export class AppComponent {
 
       }
 
-        
       this.activado = false;
 
     } else {

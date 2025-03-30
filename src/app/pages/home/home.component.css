@@ -1,6 +1,15 @@
 :host {
     display: block;
+
     min-height: 100vh;
-    background-color: #F7F7F7; /* Azul */
+    background-color: #ffffff; /* cambiar a dibujito */
+
     padding: 1%;
+    padding-top: 5vh;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Centra horizontalmente */
 }
