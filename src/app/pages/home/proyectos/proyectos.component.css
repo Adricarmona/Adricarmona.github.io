@@ -19,15 +19,25 @@
     justify-content: center;
     gap: 3vh;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .proyecto {
     padding: 5px;
     border-radius: 10px;
 }
 
 .proyecto:hover{
-    transform: scale(0.9);
+    transform: scale(0.99);
     border: 3px solid #ffffff34 ;
     box-shadow: 0 0 10px 10px #ffffff34;
+}
+
+.proyecto:active{
+    transform: scale(0.90);
 }
 
 .imagenesPortada {
