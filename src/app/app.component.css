@@ -1,3 +1,10 @@
+:host {
+    display: block;
+    background-image: url('../../public/fondoWeb.png');
+    padding: 1vh;
+    color: white;
+}
+
 #navbar {
     position: fixed;
     top: -3px;

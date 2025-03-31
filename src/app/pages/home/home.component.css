@@ -1,9 +1,6 @@
 :host {
     display: block;
 
-    min-height: 100vh;
-    background-image: url('../../../../public/fondoWeb.png');
-
     padding: 1%;
     padding-top: 5vh;
 

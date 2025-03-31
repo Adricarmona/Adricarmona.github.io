@@ -24,13 +24,11 @@ export class AppComponent {
         elemento.style.display = "block";
         setTimeout(() => {
           elemento.style.transform = "scale(1)";
-          elemento.style.opacity = "1";
         }, 10);
 
       } else {
         
         elemento.style.transform = "scale(0)";
-        elemento.style.opacity = "0";
         setTimeout(() => {
           elemento.style.display = "none";
         }, 300);
