@@ -10,37 +10,42 @@ import { find } from 'rxjs';
 })
 export class AppComponent {
   title = 'Adricarmona.github.io';
+  activado: boolean = false; // Inicialmente oculto
 
-  activado: boolean = true;
+  navbarMenu() {
+    const opcionesNavbar = document.getElementsByClassName("opcionesNavbar");
+    const icono = document.getElementById("opciones") as HTMLElement;
 
-  navbarMenu(){
-    const opcionesNavbar = document.getElementsByClassName("opcionesNavbar")
+    for (let i = 0; i < opcionesNavbar.length; i++) {
+      const elemento = opcionesNavbar[i] as HTMLElement;
 
-    if (this.activado) {
-
-      if (opcionesNavbar) {
+      if (!this.activado) {
         
-        for (let i = 0; i < opcionesNavbar.length; i++) {
-          (opcionesNavbar[i] as HTMLElement).style.display = "block";;
-        }
+        elemento.style.display = "block";
+        setTimeout(() => {
+          elemento.style.transform = "scale(1)";
+          elemento.style.opacity = "1";
+        }, 10);
 
-      }
-
-      this.activado = false;
-
-    } else {
+      } else {
+        
+        elemento.style.transform = "scale(0)";
+        elemento.style.opacity = "0";
+        setTimeout(() => {
+          elemento.style.display = "none";
+        }, 300);
       
-      if (opcionesNavbar) {
-        
-        for (let i = 0; i < opcionesNavbar.length; i++) {
-          (opcionesNavbar[i] as HTMLElement).style.display = "none";;
-        }
-
       }
 
-      this.activado = true;
-
+      elemento.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out";
     }
-  }
 
+    // Rotar la imagen
+    if (icono) {
+      icono.style.transform = this.activado ? "rotate(0deg)" : "rotate(180deg)";
+      icono.style.transition = "transform 0.3s ease-in-out";
+    }
+
+    this.activado = !this.activado;
+  }
 }

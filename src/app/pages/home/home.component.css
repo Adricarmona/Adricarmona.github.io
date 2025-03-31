@@ -2,7 +2,7 @@
     display: block;
 
     min-height: 100vh;
-    background-color: #ffffff; /* cambiar a dibujito */
+    background-image: url('../../../../public/fondoWeb.png');
 
     padding: 1%;
     padding-top: 5vh;
