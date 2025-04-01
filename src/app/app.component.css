@@ -1,0 +1,63 @@
+:host {
+    display: block;
+    background-image: url('../../public/fondoWeb.png');
+    padding: 1vh;
+    color: white;
+}
+
+#navbar {
+    position: fixed;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: black;
+
+    padding: 0.5vh;
+
+    border-radius: 0px 0px 10px 10px;
+    border: 3px solid #FFB22C ;
+    box-shadow: 0 0 7px 1px #FFB22C;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+}
+
+/*Boton imagren para abrir opciones*/
+#opciones {
+    width: 2.5vh;
+}
+
+#opciones:hover {
+    transform: scale(0.9);
+}
+
+#opciones:active {
+    transform: scale(0.8);
+}
+
+
+/*Cada apartado*/
+h4 {
+    margin-left: 1vh;
+    color: white;
+}
+h4:hover {
+    transform: scale(0.9);
+}
+
+h4:active {
+    transform: scale(0.8);
+}
+
+.opcionesNavbar {
+    display: none;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#opciones {
+    transition: transform 0.3s ease-in-out;
+}

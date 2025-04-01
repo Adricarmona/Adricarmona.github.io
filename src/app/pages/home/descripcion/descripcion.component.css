@@ -1,0 +1,15 @@
+#fondocomponente {
+    background-color: #000000;
+
+    border-radius: 20px;
+    border: 3px solid #FFB22C ;
+    box-shadow: 0 0 7px 1px #FFB22C;
+
+    padding: 20px;
+    margin: 2vh;
+
+    color: white;
+    text-align: justify;
+
+    max-width: 150vh;
+}

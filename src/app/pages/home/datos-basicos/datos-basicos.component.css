@@ -1,0 +1,44 @@
+.posicionBloquesIzquierda {
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+#fotoPerfil {
+    border-radius: 100%;
+    border: 3px solid #FFB22C ;
+    box-shadow: 0 0 7px 1px #FFB22C;
+
+    width: 20vh;
+    
+    z-index: 1;
+}
+
+#fondoDatosPerfil {
+    background-color: #000000;
+
+    border-radius: 20px;
+    border: 3px solid #FFB22C ;
+    box-shadow: 0 0 7px 1px #FFB22C;
+
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 70px;
+
+    position: relative;
+    left: -60px;
+}
+
+hr {
+    width: 60px;
+}
+
+.iconos {
+    margin-left: 4px;
+    height: 2vh;
+}
+
+.iconos:hover {
+    transform: scale(0.9);
+}
